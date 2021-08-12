@@ -48,7 +48,7 @@ public class AccesoDatosImpl implements AccesoDatos{
         try {
             PrintWriter salida;
             salida = new PrintWriter(new FileWriter(this.archivo, anexar));
-            salida.print(pelicula);
+            salida.print(pelicula + "\n");
             salida.close();
             System.out.println("Se ha registrado la película");
         } catch (FileNotFoundException e) {
